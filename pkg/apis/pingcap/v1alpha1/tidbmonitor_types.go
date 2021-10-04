@@ -399,6 +399,7 @@ type RemoteWriteSpec struct {
 	ProxyURL *string `json:"proxyUrl,omitempty"`
 	// +optional
 	QueueConfig *QueueConfig `json:"queueConfig,omitempty"`
+	// HTTP headers for the remote write
 	// +optional
 	Headers map[string]string `json:"headers,omitempty"`
 }

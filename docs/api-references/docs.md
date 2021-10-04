@@ -11400,6 +11400,18 @@ QueueConfig
 <em>(Optional)</em>
 </td>
 </tr>
+<tr>
+<td>
+<code>headers</code></br>
+<em>
+map[string]string
+</em>
+</td>
+<td>
+<em>(Optional)</em>
+<p>HTTP headers for the remote write</p>
+</td>
+</tr>
 </tbody>
 </table>
 <h3 id="restorecondition">RestoreCondition</h3>
