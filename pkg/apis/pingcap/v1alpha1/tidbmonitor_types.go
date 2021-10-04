@@ -399,6 +399,8 @@ type RemoteWriteSpec struct {
 	ProxyURL *string `json:"proxyUrl,omitempty"`
 	// +optional
 	QueueConfig *QueueConfig `json:"queueConfig,omitempty"`
+	// +optional
+	Headers map[string]string `json:"headers,omitempty"`
 }
 
 // BasicAuth allow an endpoint to authenticate over basic authentication

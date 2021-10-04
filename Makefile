@@ -180,8 +180,8 @@ lint:
 tidy:
 	@echo "go mod tidy"
 	go mod tidy && git diff -U --exit-code go.mod go.sum
-	cd pkg/apis && go mod tidy && git diff -U --exit-code go.mod go.sum
-	cd pkg/client && go mod tidy && git diff -U --exit-code go.mod go.sum
+	pwd && cd "${PWD}/pkg/apis" && go mod tidy && git diff -U --exit-code go.mod go.sum
+	pwd && cd "${PWD}/pkg/client" && go mod tidy && git diff -U --exit-code go.mod go.sum
 
 cli:
 	$(GO_BUILD) -ldflags '$(LDFLAGS)' -o tkctl cmd/tkctl/main.go
