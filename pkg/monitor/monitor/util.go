@@ -1461,6 +1461,7 @@ func generateRemoteWrite(monitor *v1alpha1.TidbMonitor) []*config.RemoteWriteCon
 			RemoteTimeout:       remoteWrite.RemoteTimeout,
 			WriteRelabelConfigs: writeRelabelConfigs,
 			HTTPClientConfig:    httpClientConfig,
+			Headers:             remoteWrite.Headers,
 		}
 		if remoteWrite.QueueConfig != nil {
 			queueConfig := config.QueueConfig{}
